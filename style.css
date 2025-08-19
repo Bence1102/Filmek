@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4893c2;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.fooldal {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: coral;
+}
+
+.kedvencek{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: coral;
+}
