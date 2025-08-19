@@ -3,6 +3,8 @@ import FilmMegjelenites from "./FilmMegjelenites.js";
 import Gomb from "./Gomb.js";
 
 const filmter= document.querySelector(".jatekter");
-new FilmMegjelenites(FilmLista, filmter);
 
+export const kosarlista = [];
+
+new FilmMegjelenites(FilmLista, filmter, kosarlista);
 new Gomb(FilmLista, filmter);

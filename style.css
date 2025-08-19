@@ -38,13 +38,41 @@ nav ul li {
     align-items: center;
     padding: 10px 20px;
     background-color: coral;
+    cursor: pointer;
 }
 
-.kedvencek{
+.kedvencek {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
     background-color: coral;
+    cursor: pointer;
+}
+
+.kosar {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: coral;
+    cursor: pointer;
+}
+
+.visszagomb {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: coral;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .jatekter {
@@ -62,8 +90,8 @@ nav ul li {
     padding: 15px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .filmek img {
@@ -82,7 +110,7 @@ nav ul li {
     border-radius: 5px;
 }
 
-.ara{
+.ara {
     font-weight: bold;
     color: #e74c3c;
     margin-top: 10px;
@@ -93,6 +121,7 @@ nav ul li {
     color: #666;
     margin-top: 10px;
 }
+
 .film-kategoria {
     font-style: italic;
     background-color: #ff0000;
@@ -102,16 +131,17 @@ nav ul li {
 
 @media (max-width: 768px) {
     .filmek {
-        width: 45%; 
+        width: 45%;
     }
 }
 
 @media (max-width: 480px) {
     .filmek {
-        width: 90%; 
+        width: 90%;
     }
+
     nav ul li {
         display: block;
-        margin: 10px 0; 
+        margin: 10px 0;
     }
 }

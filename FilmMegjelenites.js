@@ -1,16 +1,18 @@
-export default class FilmMegjelenites{
+export default class FilmMegjelenites {
     #lista = [];
     szuloElem;
-    constructor(lista,szuloElem){
+    kosarLista;
+    constructor(lista, szuloElem,kosarLista=[]) {
         this.#lista = lista;
         this.szuloElem = szuloElem;
+        this.kosarLista = kosarLista;
         this.megjelenites();
     }
 
-    megjelenites(){
+    megjelenites() {
         this.szuloElem.innerHTML = '';
         this.#lista.forEach(film => {
-        this.szuloElem.innerHTML +=`
+            this.szuloElem.innerHTML += `
                 <div class="filmek">
                     <h2>${film.cim}</h2>
                     <img src="${film.kep}" alt="${film.cim}">
@@ -22,6 +24,7 @@ export default class FilmMegjelenites{
                     <p class="kateg">Kategória: ${film.kategoria}</p>
                     <a href="${film.link}" target="_blank">IMDb Link</a>
                     <button class ="kedvencgomb">${film.kedvenc ? "Kedvenc" : "Nem kedvenc"}</button>
+                    <button class="kosar-gomb">Kosárba</button>
                 </div>
             `;
         });
@@ -31,6 +34,14 @@ export default class FilmMegjelenites{
                 film.kedvenc = !film.kedvenc;
                 this.megjelenites();
             });
+        });
+
+        this.#lista.forEach((film, index) => {
+            const kosarGomb = this.szuloElem.querySelectorAll('.kosar-gomb')[index];
+            kosarGomb.addEventListener('click', () => {
+                alert(`${film.cim} hozzáadva a kosárhoz!`);
+            });
+
         });
     }
 }
