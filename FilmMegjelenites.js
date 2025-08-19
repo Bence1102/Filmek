@@ -14,12 +14,12 @@ export default class FilmMegjelenites{
                 <div class="filmek">
                     <h2>${film.cim}</h2>
                     <img src="${film.kep}" alt="${film.cim}">
-                    <p>${film.leiras}</p>
-                    <ul>
+                    <p class="leiras">${film.leiras}</p>
+                    <p class="jellemzok">
                         ${film.jellemzok}
-                    </ul>
-                    <p>${film.ar}</p>
-                    <p>Kategória: ${film.kategoria}</p>
+                    </p>
+                    <p class="ara">${film.ar}</p>
+                    <p class="kateg">Kategória: ${film.kategoria}</p>
                     <a href="${film.link}" target="_blank">IMDb Link</a>
                     <button class ="kedvencgomb">${film.kedvenc ? "Kedvenc" : "Nem kedvenc"}</button>
                 </div>
