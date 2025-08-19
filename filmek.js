@@ -35,7 +35,7 @@ export const FilmLista = [
     },
     {
         cim: 'Eredet',
-        kep: 'kepek/inception.jpg',
+        kep: 'kepek/eredet.jpg',
         leiras: 'Christopher Nolan sci-fi thrillere az álomról és valóságról.',
         jellemzok: [
             '2010-ben készült',
