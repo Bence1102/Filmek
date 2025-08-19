@@ -7,6 +7,7 @@ export default class Gomb {
         this.szuloElem = szuloElem;
         this.#kezdolap();
         this.#kedvencgomb();
+        this.#kosarGomb();
     }
 
 
@@ -24,5 +25,12 @@ export default class Gomb {
             kezdolapGomb.addEventListener('click', () => {
             new FilmMegjelenites(this.#lista, this.szuloElem);
             });
+    }
+    #kosarGomb() {
+        const kosarGomb = document.querySelector('.kosar');
+        kosarGomb.addEventListener('click', () => {
+            const kosarfilm = this.#lista.filter(film => film.kosar === true);
+            new FilmMegjelenites(kosarfilm, this.szuloElem);
+        });
     }
 }

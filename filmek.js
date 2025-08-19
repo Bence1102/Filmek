@@ -13,7 +13,8 @@ export const FilmLista = [
         ar: "3 500 Ft",
         kedvenc: false,
         kategoria: 'Dráma',
-        link: 'https://www.imdb.com/title/tt0068646/'
+        link: 'https://www.imdb.com/title/tt0068646/',
+        kosarba: false
     },
     {
         cim: 'A Gyűrűk Ura: A Gyűrű Szövetsége',
@@ -29,7 +30,8 @@ export const FilmLista = [
         ar: "4 200 Ft",
         kedvenc: false,
         kategoria: 'Fantasy',
-        link: 'https://www.imdb.com/title/tt0120737/'
+        link: 'https://www.imdb.com/title/tt0120737/',
+        kosarba: false       
     },
     {
         cim: 'Eredet',
@@ -45,7 +47,8 @@ export const FilmLista = [
         ar: "3 800 Ft",
         kedvenc: false,
         kategoria: 'Sci-Fi',
-        link: 'https://www.imdb.com/title/tt1375666/'
+        link: 'https://www.imdb.com/title/tt1375666/',
+        kosarba: false
     },
     {
         cim: 'Forrest Gump',
@@ -61,7 +64,8 @@ export const FilmLista = [
         ar: "3 000 Ft",
         kedvenc: false,
         kategoria: 'Dráma',
-        link: 'https://www.imdb.com/title/tt0109830/'
+        link: 'https://www.imdb.com/title/tt0109830/',
+        kosarba: false
     },
     {
         cim: 'A sötét lovag',
@@ -77,6 +81,7 @@ export const FilmLista = [
         ar: "4 500 Ft",
         kedvenc: false,
         kategoria: 'Akció',
-        link: 'https://www.imdb.com/title/tt0468569/'
+        link: 'https://www.imdb.com/title/tt0468569/',
+        kosarba: false
     }
 ];
