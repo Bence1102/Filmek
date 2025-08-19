@@ -57,7 +57,7 @@ nav ul li {
     cursor: pointer;
 }
 
-.visszagomb {
+.kezdokepernyo{
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
@@ -145,3 +145,36 @@ footer {
         margin: 10px 0;
     }
 }
+
+
+aside {
+    position: fixed;
+    top: 80px;       
+    right: 20px;     
+    width: 250px;
+    max-height: 400px;   
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.kosarter h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+
+.kosarter div {
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+

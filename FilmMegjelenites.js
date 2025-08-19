@@ -1,11 +1,11 @@
 export default class FilmMegjelenites {
     #lista = [];
     szuloElem;
-    kosarLista;
-    constructor(lista, szuloElem,kosarLista=[]) {
+    kosar;
+    constructor(lista, szuloElem,kosar) {
         this.#lista = lista;
         this.szuloElem = szuloElem;
-        this.kosarLista = kosarLista;
+        this.kosar = kosar;
         this.megjelenites();
     }
 
@@ -39,7 +39,7 @@ export default class FilmMegjelenites {
         this.#lista.forEach((film, index) => {
             const kosarGomb = this.szuloElem.querySelectorAll('.kosar-gomb')[index];
             kosarGomb.addEventListener('click', () => {
-                alert(`${film.cim} hozzáadva a kosárhoz!`);
+                this.kosar.addfilm(film);
             });
 
         });

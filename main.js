@@ -1,10 +1,12 @@
 import { FilmLista } from "./filmek.js";
 import FilmMegjelenites from "./FilmMegjelenites.js";
 import Gomb from "./Gomb.js";
+import Kosar from "./Kosar.js";
 
-const filmter= document.querySelector(".jatekter");
+const filmter = document.querySelector(".jatekter");
+const kosarElem = document.querySelector('.kosarter');
 
-export const kosarlista = [];
+const kosar = new Kosar(kosarElem); 
 
-new FilmMegjelenites(FilmLista, filmter, kosarlista);
-new Gomb(FilmLista, filmter);
+new FilmMegjelenites(FilmLista, filmter, kosar); 
+new Gomb(FilmLista, filmter, kosar); 
